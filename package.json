@@ -4,6 +4,10 @@
   "description": "Photographer Sans Microblog",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=dev eleventy --serve",
+    "build": "cross-env NODE_ENV=prod eleventy",
+    "seed": "cross-env NODE_ENV=seed eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +24,17 @@
   "bugs": {
     "url": "https://github.com/sgiobairog/photographer-sans-netlify/issues"
   },
-  "homepage": "https://github.com/sgiobairog/photographer-sans-netlify#readme"
+  "homepage": "https://github.com/sgiobairog/photographer-sans-netlify#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "custom-env": "^2.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "axios": "^0.19.2",
+    "html-minifier": "^4.0.0",
+    "nunjucks": "^3.2.1",
+    "seed": "^0.4.4",
+    "tabletop": "^1.6.2"
+  }
 }
