@@ -35,13 +35,12 @@ body {
 .photo__border {
   stroke-width: 2px;
 }
-
 .photo__content-border {
   stroke-width: 1px;
   fill: transparent;
 }
 .photo__content {
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Major Mono Display", monospace;
 }
 .photo__caption {
