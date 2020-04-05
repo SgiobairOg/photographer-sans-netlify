@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Major+Mono+Display&display=swap');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  margin-bottom: 18px;
+}
+.page-title {
+  font-size: 24px;
+  font-family: "Major Mono Display", monospace;
+  margin: 0;
+  padding: 24px 24px 8px;
+}
+.page-byline {
+  font-size: 18px;
+  font-family: "Gochi Hand", cursive;
+  margin: 0;
+  padding: 0px 24px;
+}
+.photo {
+  height: 60vh;
+  padding: 80px 0;
+}
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo__border {
+  stroke-width: 2px;
+}
+
+.photo__content-border {
+  stroke-width: 1px;
+  fill: transparent;
+}
+.photo__content {
+  font-size: 18px;
+  font-family: "Major Mono Display", monospace;
+}
+.photo__caption {
+  font-size: 18px;
+  font-family: "Gochi Hand", cursive;
+}
+.footer-tagline {
+  font-size: 18px;
+  font-family: "Gochi Hand", cursive;
+  margin: 0;
+  padding: 18px 24px 18px;
+}

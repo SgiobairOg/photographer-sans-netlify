@@ -1,0 +1,9 @@
+{% extends "./layouts/_main.njk" %}
+{% import "./partials/_macros.njk" as macros %}
+
+{% block content %}
+    {% for photoData in sheet.content %}
+        {{ macros.photo(photoData)}}
+    {% else %}
+    {% endfor %}
+{% endblock content %}

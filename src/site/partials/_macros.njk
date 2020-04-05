@@ -1,0 +1,20 @@
+{% macro photo(data) %}
+    <div class="photo-wrap" style="background-color: #{{data.bgColor}}">
+        <svg class="photo" viewbox="-225 -225 450 450">
+            <g class="photo-elements" style="transform: rotate({{ [1,-2,1.5,-0.7,0.2] | random }}deg);">
+                <rect class="photo__border" x="-175" y="-210" width="350" height="420" style="fill: #{{data.bgColor}}; stroke: #{{data.fgColor}}"/>
+                <rect class="photo__content-border" x="-155" y="-190" width="310" height="310" style="stroke: #{{data.fgColor}}AA"/>
+                <text x="-155" y="130" class="photo__caption" style="fill: #{{data.fgColor}}">
+                    {% for titleLine in data.titleElements %}
+                        <tspan x="-145" dy="24" textlength="290" lengthadjust="spacing">{{titleLine}}</tspan>
+                    {% endfor %}
+                </text>
+                <text x="-145" y="-189" class="photo__content" style="fill: #{{data.fgColor}}">
+                    {% for textLine in data.textElements %}
+                        <tspan x="-145" dy="24" textlength="290" lengthadjust="spacing">{{textLine}}</tspan>
+                    {% endfor %}
+                </text>
+            </g>
+        </svg>
+    </div>
+{% endmacro %}
