@@ -41,6 +41,8 @@ module.exports = () => {
                 response.data.feed.entry.forEach(item => {
                     console.log(JSON.stringify(item, null, 2));
                     data.content.push({
+                        "title": item.gsx$title.$t,
+                        "text": item.gsx$text.$t,
                         "titleElements": buildTextToLength(
                             item.gsx$title.$t.split(' '), item.gsx$titlelinelength.$t
                         ),
