@@ -4,3 +4,9 @@
 
 # NPM
 node_modules/
+
+# Distribution
+dist/
+
+# Data
+src/site/photo-albums/dev
