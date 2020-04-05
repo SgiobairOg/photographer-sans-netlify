@@ -1,6 +1,10 @@
 {% macro photo(data) %}
     <div class="photo-wrap" style="background-color: #{{data.bgColor}}">
-        <svg class="photo" viewbox="-225 -225 450 450">
+        <article class="offscreen-assistive">
+            <h2>{{data.title}}</h2>
+            <p>{{data.text}}</p>
+        </article>
+        <svg class="photo" viewbox="-225 -225 450 450" aria-hidden="true">
             <g class="photo-elements" style="transform: rotate({{ [1,-2,1.5,-0.7,0.2] | random }}deg);">
                 <rect class="photo__border" x="-175" y="-210" width="350" height="420" style="fill: #{{data.bgColor}}; stroke: #{{data.fgColor}}"/>
                 <rect class="photo__content-border" x="-155" y="-190" width="310" height="310" style="stroke: #{{data.fgColor}}AA"/>
