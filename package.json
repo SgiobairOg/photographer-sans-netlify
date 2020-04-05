@@ -4,7 +4,7 @@
   "description": "Photographer Sans Microblog",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run seed && npm run dev",
     "dev": "cross-env NODE_ENV=dev eleventy --serve",
     "build": "cross-env NODE_ENV=prod eleventy",
     "seed": "cross-env NODE_ENV=seed eleventy",
