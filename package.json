@@ -30,7 +30,7 @@
     "custom-env": "^2.0.1"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "axios": "^0.21.2",
     "html-minifier": "^4.0.0",
     "nunjucks": "^3.2.1",
